@@ -132,11 +132,11 @@ int main()
 						}
 					}
 				}
-				printf("%lli %lli %lli\n",min,count1,count2 );
+//				printf("%lli %lli %lli\n",min,count1,count2 );
 
 				percent_match=((2*min)/(double)(count1+count2-2));//*100;
 				 percent_match=(double)(percent_match*100);
-				printf("%s %.2lf\n","Percentage match betw",percent_match );
+				printf("%s %.2lf\n","Percentage match between these files is ",percent_match );
 			}
 		}
 	}
