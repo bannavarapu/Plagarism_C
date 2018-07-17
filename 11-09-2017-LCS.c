@@ -53,8 +53,7 @@ long long compare(char a[],char b[],long i,long j)
 	{
 		if(a[i]==b[j])
 		{
-			// printf("%c\n",a[i] );
-			// printf("%s\n","Hey" );
+
 			common++;
 			i++;
 			j++;
