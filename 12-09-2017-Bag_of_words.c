@@ -18,9 +18,7 @@ long get_word_count(FILE *fp)
 	char c;
 
 	while((c=fgetc(fp))!=EOF)
-	// while(1)
 	{
-		c=fgetc(fp);
 		if(c==' ' || c=='\n' ||c==EOF)
 		{
 			word_count++;
@@ -29,10 +27,6 @@ long get_word_count(FILE *fp)
 		{
 			characters++;
 		}
-		// if(c==EOF)
-		// {
-		// 	break;
-		// }
 	}
 	if(word_count==1)
 	{
@@ -49,7 +43,6 @@ long get_word_count(FILE *fp)
 	{
 		return (word_count+1);
 	}
-	// return (word_count);
 }
 
 void frequency(struct name_count names1[],long word_count1)
